@@ -109,7 +109,7 @@ public class BouncingBall extends JFrame {
 		});
 
 	}
-	//Nested Class (Class bên trong class khác)
+	//Nested Class (Class bin trong class khac)
 	private class DrawingCanvas extends JPanel {
 
 		@Override
@@ -117,6 +117,8 @@ public class BouncingBall extends JFrame {
 			long start = System.nanoTime();
 			super.paintComponent(g);
 			setBackground(Color.BLUE);
+			setBackground(new Color(175,215,230));
+			
 			//Ball
 			g.setColor(ballColor);
 			g.fillOval(x, y, size, size);
